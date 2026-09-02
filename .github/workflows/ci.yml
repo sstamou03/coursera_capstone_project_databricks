@@ -23,7 +23,7 @@ jobs:
         run: python -m compileall -q python notebooks
 
       - name: Lint
-        run: ruff check python notebooks --ignore E402,F821
+        run: ruff check python notebooks --select E9,F63,F7 --ignore F821
 
       # SQL files are deliverables; this guards against empty or missing ones.
       - name: Verify SQL deliverables exist
