@@ -1,0 +1,18 @@
+CREATE CATALOG IF NOT EXISTS capstone_gov;
+
+USE CATALOG capstone_gov;
+
+
+CREATE SCHEMA IF NOT EXISTS bronze
+CREATE SCHEMA IF NOT EXISTS silver
+CREATE SCHEMA IF NOT EXISTS gold
+
+
+CREATE VOLUME IF NOT EXISTS bronze.raw_landing
+
+
+
+SHOW SCHEMAS IN capstone_gov;
+SHOW VOLUMES IN capstone_gov.bronze;
+DESCRIBE CATALOG EXTENDED capstone_gov;
+
